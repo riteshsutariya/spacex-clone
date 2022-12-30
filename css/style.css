@@ -31,11 +31,11 @@ ul {
   width: 100%;
   z-index: 3;
   display: flex;
-  justify-content: space-between;
+  margin-left: 48px;
   align-items: center;
   text-transform: uppercase;
   height: 100px;
-  padding: 0 30px;
+  padding: 0 45px;
 }
 
 /*Logo*/
@@ -43,6 +43,7 @@ ul {
 .logo {
   width: 210px;
   height: auto;
+  margin-left: 6rem;
 }
 
 .logo img {
@@ -53,7 +54,7 @@ ul {
 
 /* Desktop Menu */
 .desktop-main-menu {
-  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .desktop-main-menu ul {
@@ -228,7 +229,7 @@ footer ul li a:hover{
 .hamburger{
   position: fixed;
   top:40px;
-  right: 20px;
+  right: 50px;
   z-index: 10;
   cursor: pointer;
   width: 20px;
@@ -301,7 +302,7 @@ footer ul li a:hover{
   position: fixed;
   top: 0;
   right: 0;
-  width: 360px;
+  width: 290px;
   height: 100vh;
   z-index: 4;
   background-color: #000;
@@ -358,6 +359,10 @@ footer ul li a:hover{
   background-image:url(../img/dragon.webp) ;
 }
 
+.bg-starship{
+  background-image:url(../img/starship.jpeg) ;
+}
+
 .section-animate{
   animation: fadeIn 2s ease-in-out;
 }
@@ -383,6 +388,20 @@ footer ul li a:hover{
   animation-fill-mode: both;
   width: 80%;
 
+}
+
+/* Text section */
+.text-section{
+  font-size: 16px;
+  column-count: 2;
+  column-gap: 3rem;
+  width: 80%;
+  margin: 24px auto;
+  padding: 72px;
+}
+
+.text-section p{
+  line-height: 2em;
 }
 
 /* States */
@@ -461,6 +480,21 @@ transform: translateY(0);
 }
 
 @media(max-width:600px) {
+
+.mobile-main-menu ul{
+margin-top: 124px;
+} 
+  .logo {
+    width: 210px;
+    height: auto;
+    margin-left: 0.5rem;
+  }
+
+  .main-header{
+    margin-left: 2px;
+    padding: 0 25px;
+  }
+
   .section-inner{
     bottom: 75px;
     left: 25px;
@@ -512,7 +546,7 @@ transform: translateY(0);
   
   .stats{
     width: 80%;
-    margin: 75px auto;
+    margin: 32px auto;
   }
 
   .stats div{
@@ -528,21 +562,5 @@ transform: translateY(0);
   line-height: 1.5em;
   font-weight: 300;
 }
-/* 
-  .stats{
-    flex-direction: column;
-    margin: 14px 0;
-  } */
-
-  /* .stats div{
-    margin-bottom: 32px;
-  }
-
-  .stats div
-  {
-    padding-bottom: 12px;
-    border-bottom: 1px solid #aaa;
-  } */
-
 }
 
