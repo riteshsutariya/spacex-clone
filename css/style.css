@@ -348,19 +348,24 @@ footer ul li a:hover{
 
 /* Inner Pages */
 .bg-falcon-9{
-  background-image:url(../img/falcon-9.webp) ;
+  background-image:url("../img/falcon-9.webp") ;
 }
 
 .bg-falcon-heavy{
-  background-image:url(../img/falcon-heavy.webp) ;
+  background-image:url("../img/falcon-heavy.webp") ;
 }
 
 .bg-dragon{
-  background-image:url(../img/dragon.webp) ;
+  background-image:url("../img/dragon.webp") ;
 }
 
 .bg-starship{
-  background-image:url(../img/starship.jpeg) ;
+  background-image:url("../img/starship.jpeg") ;
+}
+
+.bg-starship-line
+{
+  background-image: url("../img/StarshipStack_Line.jpeg");
 }
 
 .section-animate{
@@ -393,15 +398,51 @@ footer ul li a:hover{
 /* Text section */
 .text-section{
   font-size: 16px;
-  column-count: 2;
-  column-gap: 3rem;
   width: 80%;
   margin: 24px auto;
   padding: 72px;
+  height: auto !important;
+}
+
+.flex{
+  display: flex;
+}
+
+.text-column{
+  width: 50%;
+}
+
+.text-column p{
+  margin: 16px 0;
+} 
+
+.text-column:first-child{
+  padding-right: 30px;
+}
+
+.text-column:last-child{
+  padding-left: 30px;
 }
 
 .text-section p{
-  line-height: 2em;
+  line-height: 1.5em;
+}
+
+.text-inner-left{
+  width: 50%;
+  max-width: 568px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
+
+.h-80{
+  height: 80vh;
+}
+
+.h-100{
+  height: 100vh !important;
 }
 
 /* States */
@@ -561,6 +602,39 @@ margin-top: 124px;
   font-size: 12px;
   line-height: 1.5em;
   font-weight: 300;
+}
+
+.col-2{
+  display: block;
+  column-count: auto;
+}
+
+.grid-2-col{
+   display: block;
+}
+
+.h-80,.h-50{
+  height: auto;
+}
+
+.text-section{
+  padding: 2px;
+  text-align: left;
+  font-size: 16px;
+  width: 90%;
+}
+
+.text-column{
+  width: 100%;
+}
+
+.text-column:first-child,.text-column:last-child{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flex{
+  flex-direction: column;
 }
 }
 
